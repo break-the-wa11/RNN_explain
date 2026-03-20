@@ -1,0 +1,33 @@
+problem:
+  hyp:
+    alpha: 0.01
+    clip: null
+    epochs: 50
+    lr: 0.001
+    lr_decay: step
+    lr_factor: 0.1
+    lr_schedule:
+    - 100
+    lr_throttle: true
+    optimizer: adam
+    save_period: -1
+    test_batch_size: 25
+    test_mode: default
+    train_batch_size: 50
+    train_mode: progressive
+    val_period: 20
+    warmup_period: 10
+  model:
+    model: dt_net_recall_2d
+    model_path: null
+    width: 128
+    max_iters: 30
+    test_iterations:
+      low: 30
+      high: 40
+  name: mazes
+  test_data: 33
+  train_data: 9
+train_log: train_log
+name: mazes_ablation
+run_id: rusty-Tayla
